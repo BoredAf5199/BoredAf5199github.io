@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Davis Foster's Webpage</title>
-        <link rel="icon" href="Pipeman inc.ico" type="image/x-icon">
+        <link rel="icon" href="Pipeman_inc.ico" type="image/x-icon">
         <style>
             body {
                 background-image: url('https://wallpapercave.com/wp/wp2686927.jpg');
@@ -14,6 +14,7 @@
                 margin: 0;
                 padding: 0;
             }
+
             header {
                 background-image: url('https://cdn.wallpapersafari.com/23/23/TwIzHS.jpg'); 
                 background-size: cover;
@@ -24,65 +25,54 @@
                 text-align: center;
                 font-size: large;
             }
-            div {
-                color: rgb(182, 41, 158);
-                margin: auto;
-                background-color: black;
-                 
-            }
-            button {
-                background: grey;
-                border: none;
-                color: rgb(90, 90, 90);
-            }
+
             html {
                 width: 100%;
                 height: 100%;
             }
-            ul {
-                margin: auto;
-                padding: 20px;
-                display: flex;
-                list-style-type: none;
-                background-color: black;
+
+            ul.Header-section, ul.Portfolio-section {
+                padding: 0; /* Remove default padding */
+                margin: 0; /* Remove default margin */
             }
-            li {
-                display: inline;
-                margin-left: 20px;    
-                margin-right: 20px;
-                background-color: black;
-            }
-            figure > img {
-                width: 280px;
-            }
-            figcaption {
+
+            ul.Portfolio-section{
                 text-align: center;
+                font-size: larger;
             }
-            section {
+
+            ul.Header-section {
+                display: flex; /* Apply flex to the ul element */
+                background-color: black;
+            }
+
+            ul.Header-section li, ul.Portfolio-section li {
                 color: rgb(182, 41, 158);
-                display: inline;
-                margin: auto;
                 padding: 20px;
+                list-style-type: none;
+            }
+
+            ul.Portfolio-section li {
+                background-color: rgba(128, 128, 128, 0.5);
+                display: inline-block;
+                margin: 15px 20px;
+                padding: 10px 0px; /* Adjust padding for consistency */
                 text-align: center;
             }
         </style>
     </head>
     <body>
         <header>Portfolio</header>
-       <nav>
-            <ul>
+        <nav>
+            <ul class="Header-section">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Artist Statement.html">Artist Statement</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
             </ul>
-       </nav>
-       <section>
-          <ul>
-
-           <li><a href ="ASM3O Portfolio.html">ASM30 Portfolio</a></li>
-           <li><a href="General Portfolio.html">General Portfolio</a></li>
-
-        </ul>   
-       </section>
+            <ul class="Portfolio-section">
+                <li><a href ="ASM30 Portfolio.html">ASM30 Portfolio</a></li>
+                <li><a href="General Portfolio.html">General Portfolio</a></li>
+            </ul>  
+        </nav>    
     </body> 
 </html>
