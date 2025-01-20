@@ -1,19 +1,26 @@
 <!DOCTYPE html>
+
 <html>
+
     <head>
+
         <title>Davis Foster's Webpage</title>
+
         <link rel="icon" href="Pipeman_inc.ico" type="image/x-icon">
+
         <style>
+
             body {
                 background-image: url('https://wallpapercave.com/wp/wp2686927.jpg');
                 background-size: cover;
                 width: 100%;
                 height: 100%;
                 background-repeat: no-repeat;
-                font-family: helvetica Neue, Helvetica, Arial, sans-serif;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
                 margin: 0;
                 padding: 0;
             }
+
             header {
                 background-image: url('https://cdn.wallpapersafari.com/23/23/TwIzHS.jpg'); 
                 background-size: cover;
@@ -24,45 +31,45 @@
                 text-align: center;
                 font-size: large;
             }
-            div {
-                color: rgb(182, 41, 158);
+
+            ul.Header-section {
+                display: flex; /* Apply flex to the ul element */
                 background-color: black;
-                 
+                padding: 0; /* Remove default padding */
+                margin: 0; /* Remove default margin */           
             }
-            button {
-                background: grey;
-                border: none;
-                color: rgb(90, 90, 90);
+
+            ul.Header-section li{
+                color: rgb(182, 41, 158);
+                padding: 20px;
+                list-style-type: none;
             }
+
             html {
                 width: 100%;
                 height: 100%;
             }
-            ul {
-                margin: auto;
-                padding: 20px;
-                display: flex;
-                list-style-type: none;
-                background-color: black;
-            }
-            li {
-                display: inline;
-                margin-left: 20px;    
-                margin-right: 20px;
-                background-color: black;
-            }
+            
         </style>
+
     </head>
+
     <body>
+
        <header>Davis Foster's Webpage</header>
+
        <nav>
-            <ul>
+
+            <ul class="Header-section">
+
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Artist-Statement.html">Artist Statement</a></li>
                 <li><a href="Portfolios.html">Portfolios</a></li>
+
             </ul>
+
        </nav>
-       <section>
-       </section>
+       
     </body> 
+
 </html>
