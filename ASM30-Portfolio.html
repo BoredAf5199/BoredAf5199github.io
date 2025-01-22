@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
 <html>
 
     <head>
@@ -32,33 +34,48 @@
                 font-size: large;
             }
 
+            html {
+                width: 100%;
+                height: 100%;
+            }
+
+            ul.Header-section, ul.Portfolio-section {
+                padding: 0; /* Remove default padding */
+                margin: 0; /* Remove default margin */
+            }
+
+            ul.Portfolio-section{
+                text-align: center;
+                font-size: larger;
+            }
+
             ul.Header-section {
                 display: flex; /* Apply flex to the ul element */
                 background-color: black;
-                padding: 0; /* Remove default padding */
-                margin: 0; /* Remove default margin */           
             }
 
-            ul.Header-section li{
+            ul.Header-section li, ul.Portfolio-section li {
                 color: rgb(182, 41, 158);
                 padding: 20px;
                 list-style-type: none;
             }
 
-            html {
-                width: 100%;
-                height: 100%;
+            ul.Portfolio-section li {
+                background-color: rgba(128, 128, 128, 0.5);
+                margin: 15px 20px;
+                padding: 10px 0px; /* Adjust padding for consistency */
+                text-align: center;
             }
-            
+
         </style>
 
     </head>
 
     <body>
 
-       <header>ASM30 Portfolio</header>
+        <header>ASM30 Portfolio</header>
 
-       <nav>
+        <nav>
 
             <ul class="Header-section">
 
@@ -68,8 +85,15 @@
 
             </ul>
 
-       </nav>
-       
+            <ul class="Portfolio-section">
+                
+                <li><a href ="ASM30-Portfolio.html">ASM30 Portfolio</a></li>
+                <li><a href="General-Portfolio.html">General Portfolio</a></li>
+
+            </ul>  
+
+        </nav>    
+
     </body> 
 
 </html>
