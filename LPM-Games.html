@@ -1,87 +1,86 @@
 <!DOCTYPE html>
-
 <html>
+<head>
+    <title>LPM Games</title>
+    <link rel="icon" href="Pipeman_inc.ico" type="image/x-icon">
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp2686927.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    <head>
+        header {
+            background-image: url('https://cdn.wallpapersafari.com/23/23/TwIzHS.jpg'); 
+            background-size: cover;
+            max-width: 100%;
+            padding: 20px 0px 20px 0px;
+            color: rgb(0, 130, 250);
+            margin: 0;
+            text-align: center;
+            font-size: large;
+        }
 
-        <title>LPM Games</title>
+        ul.Header-section {
+            display: flex; /* Apply flex to the ul element */
+            background-color: black;
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */           
+        }
 
-        <link rel="icon" href="Pipeman_inc.ico" type="image/x-icon">
+        ul.Header-section li {
+            color: rgb(182, 41, 158);
+            padding: 20px;
+            list-style-type: none;
+        }
 
-        <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
 
-            body {
-                background-image: url('https://wallpapercave.com/wp/wp2686927.jpg');
-                background-size: cover;
-                width: 100%;
-                height: 100%;
-                background-repeat: no-repeat;
-                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
+        p {
+            background-color: rgba(128, 128, 128, 0.5);
+            text-align: center;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
 
-            header {
-                background-image: url('https://cdn.wallpapersafari.com/23/23/TwIzHS.jpg'); 
-                background-size: cover;
-                max-width: 100%;
-                padding: 20px 0px 20px 0px;
-                color: rgb(0, 130, 250);
-                margin: 0;
-                text-align: center;
-                font-size: large;
-            }
+        .iframe-container {
+            width: 400px; /* Set the width of the container */
+            height: 400px; /* Set the height of the container */
+            overflow: hidden; /* Hide overflow */
+            position: relative; /* Position relative for absolute positioning of iframe */
+            margin: 0 auto; /* Center the container */
+        }
 
-            ul.Header-section {
-                display: flex; /* Apply flex to the ul element */
-                background-color: black;
-                padding: 0; /* Remove default padding */
-                margin: 0; /* Remove default margin */           
-            }
-
-            ul.Header-section li{
-                color: rgb(182, 41, 158);
-                padding: 20px;
-                list-style-type: none;
-            }
-
-            html {
-                width: 100%;
-                height: 100%;
-            }
-
-            p{
-                background-color: rgba(128, 128, 128, 0.5);
-                text-align: center;
-                margin-left: 20%;
-                margin-right: 20%;
-            }
-
-        </style>
-
-    </head>
- 
-    <body>
-
-       <header>LPM Games</header>
-
-       <nav>
-
-            <ul class="Header-section">
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Artist-Statement.html">Artist Statement</a></li>
-                <li><a href="Portfolios.html">Portfolios</a></li>
-
-            </ul>
-
-       </nav>
-
-       <div style="width: 500px; height: 500px; overflow: hidden">
+        iframe {
+            position: absolute; /* Position absolute to allow centering */
+            top: 50%; /* Move to the center vertically */
+            left: 50%; /* Move to the center horizontally */
+            width: 800px; /* Set width larger than container */
+            height: 800px; /* Set height larger than container */
+            transform: translate(-50%, -50%); /* Center the iframe */
+            border: none; /* Remove default border */
+        }
+    </style>
+</head>
+<body>
+    <header>LPM Games</header>
+    <nav>
+        <ul class="Header-section">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Artist-Statement.html">Artist Statement</a></li>
+            <li><a href="Portfolios.html">Portfolios</a></li>
+        </ul>
+    </nav>
+    <div class="iframe-container">
         <iframe src="https://editor.p5js.org/dafos0801/full/y1_A5tXd5"></iframe>       
-       </div>
-      
-
-    </body> 
-
+    </div>
+</body> 
 </html>
